@@ -258,7 +258,7 @@ Return a JSON object with EXACTLY this structure. All string fields must be popu
 
   const message = await client.messages.create({
     model: 'claude-sonnet-4-6',
-    max_tokens: 8192,
+    max_tokens: 32000,
     system: systemPrompt,
     messages: [{ role: 'user', content: userPrompt }],
   });
