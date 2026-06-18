@@ -32,6 +32,9 @@ export const config = {
   },
 };
 
+// Allow up to 5 minutes for Claude to generate the full report
+export const maxDuration = 300;
+
 // ── Handler ───────────────────────────────────────────────────────────────────
 
 export default async function handler(req, res) {
